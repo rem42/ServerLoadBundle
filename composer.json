@@ -1,0 +1,33 @@
+{
+	"name": "rem42/server-load-bundle",
+	"version": "dev-master",
+	"type": "symfony-bundle",
+	"license": "MIT",
+	"description": "Server Load for development app",
+	"authors": [
+		{
+			"name": "Rémy BRUYERE",
+			"email": "me@remy.ovh",
+			"homepage": "https://remy.ovh",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php" : ">=5.3.0",
+		"symfony/console" : "~3.0",
+		"symfony/framework-bundle" : "~3.0",
+		"symfony/config" : "~3.0",
+		"symfony/dependency-injection" : "~3.0",
+		"symfony/http-kernel"  : "~3.0"
+	},
+	"autoload": {
+		"psr-4": { "Rem42\\Bundle\\ServerLoadBundle\\": "" }
+	},
+	"minimum-stability": "dev",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/rem42/ServerLoadBundle"
+		}
+	]
+}
