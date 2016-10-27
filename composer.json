@@ -29,5 +29,6 @@
 			"type": "vcs",
 			"url": "https://github.com/rem42/ServerLoadBundle"
 		}
-	]
+	],
+	"target-dir" : "Rem42/Bundle/ServerLoadBundle"
 }
