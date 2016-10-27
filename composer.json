@@ -21,7 +21,7 @@
 		"symfony/http-kernel"  : "~3.0"
 	},
 	"autoload": {
-		"psr-4": { "Rem42\\Bundle\\ServerLoadBundle\\": "" }
+		"psr-0": { "Rem42\\Bundle\\ServerLoadBundle\\": "" }
 	},
 	"minimum-stability": "dev",
 	"repositories": [
