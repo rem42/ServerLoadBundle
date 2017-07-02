@@ -22,16 +22,19 @@ class ServerLoadCommand extends ContainerAwareCommand
 	{
 		if($this->getContainer()->hasParameter('rem42_server_load.host')){
 			$host = $this->getContainer()->getParameter('rem42_server_load.host');
-			$host .= ":8000";
+			if(!strstr($host, ':')){
+				$host .= ":8000";
+			}
 		}else{
 			$host = '127.0.0.1:8000';
 		}
+		$output->writeln($host);
 
 		$command = $this->getApplication()->find('server:run');
 
 		$arguments = array(
 			'command' => 'server:run',
-			'address' => $host
+			'addressport' => $host
 		);
 
 		$greetInput = new ArrayInput($arguments);

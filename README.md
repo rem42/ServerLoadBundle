@@ -27,7 +27,7 @@ Enable the bundle in your kernel:
 Add the following lines at `app/config/config_dev.yml`:
 
     rem42_server_load:
-        host: "your_personalized_host.dev"
+        host: "your_personalized_host.dev:port"
 
 
 ## Execute
